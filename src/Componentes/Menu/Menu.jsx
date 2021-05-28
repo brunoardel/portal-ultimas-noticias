@@ -13,7 +13,7 @@ export default function Menu(props) {
                   ? 'nav-link active p-2 text-muted'
                   : 'nav-link p-2 text-muted'
               }
-              to={'/categoria/' + categoria.url}
+              to={'portal-ultimas-noticias/categoria/' + categoria.url}
               key={i}
             >
               {categoria.nome}

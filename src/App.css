@@ -107,9 +107,7 @@ h6 {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
-/*
- * Blog name and description
- */
+/* Blog name and description */
 
 .blog-title {
   margin-bottom: 0;
@@ -138,9 +136,7 @@ h6 {
   border-radius: 2rem;
 }
 
-/*
- * Blog posts
- */
+/* Blog posts */
 
 .blog-post {
   margin-bottom: 4rem;
@@ -156,9 +152,7 @@ h6 {
   color: #999;
 }
 
-/*
- * Footer
- */
+/* Footer */
 
 .blog-footer {
   padding: 2.5rem 0;
