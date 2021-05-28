@@ -9,9 +9,13 @@ export default class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path="/categoria/:categoria" component={Principal} />
-          <Route exact path="/" component={Principal} />
-          <Redirect to="/" />
+          <Route
+            exact
+            path="/portal-ultimas-noticias/categoria/:categoria"
+            component={Principal}
+          />
+          <Route exact path="/portal-ultimas-noticias/" component={Principal} />
+          <Redirect to="/portal-ultimas-noticias/" />
         </Switch>
       </BrowserRouter>
     );
