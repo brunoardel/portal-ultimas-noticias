@@ -23,7 +23,7 @@ export default function Principal(props) {
 
   return (
     <div className="container">
-      <Topo titulo={'Últimas Notícias'} logo={'/logo.png'} />
+      <Topo titulo={'Últimas Notícias'} logo={'./logo.png'} />
       <Menu categorias={categorias} categoriaAtiva={categoriaAtiva} />
       <Noticias categoriaAtiva={categoriaAtiva} />
     </div>
