@@ -4,7 +4,7 @@ import axios from 'axios';
 export default class UltimasNoticias extends Component {
   constructor() {
     super();
-    this.chaveAcesso = 'e326f723609f4023a0c9182265801b9c';
+    this.chaveAcesso = 'e75c4d8babcc1fda571d67ad6fcdfd5a';
     this.state = {
       noticias: [],
     };
@@ -25,9 +25,9 @@ export default class UltimasNoticias extends Component {
     } else {
       axios
         .get(
-          'https://newsapi.org/v2/top-headlines?country=br&category=' +
+          'https://gnews.io/api/v4/top-headlines?lang=pt&country=br&topic=' +
             this.props.categoriaAtiva +
-            '&apiKey=' +
+            '&token=' +
             this.chaveAcesso,
         )
         .then((response) => {

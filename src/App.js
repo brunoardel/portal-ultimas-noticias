@@ -7,14 +7,10 @@ import './App.css';
 export default class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route
-            exact
-            path="/portal-ultimas-noticias/categoria/:categoria"
-            component={Principal}
-          />
-          <Route exact path="/portal-ultimas-noticias/" component={Principal} />
+          <Route path="/categoria/:categoria" component={Principal} />
+          <Route exact path="/" component={Principal} />
           <Redirect to="/portal-ultimas-noticias/" />
         </Switch>
       </BrowserRouter>

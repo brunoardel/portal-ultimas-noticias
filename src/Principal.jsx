@@ -5,12 +5,15 @@ import Noticias from './Componentes/Noticias/Noticias';
 
 export default function Principal(props) {
   const categorias = [
-    { url: 'general', nome: 'Geral' },
-    { url: 'technology', nome: 'Tecnologia' },
-    { url: 'health', nome: 'Saúde' },
+    { url: 'breaking-news', nome: 'Geral' },
+    { url: 'world', nome: 'Mundo' },
+    { url: 'nation', nome: 'Nacional' },
     { url: 'business', nome: 'Negócios' },
+    { url: 'technology', nome: 'Tecnologia' },
     { url: 'entertainment', nome: 'Entretenimento' },
     { url: 'sports', nome: 'Esportes' },
+    { url: 'science', nome: 'Ciência' },
+    { url: 'health', nome: 'Saúde' },
   ];
 
   let categoriaAtiva = 'general';
